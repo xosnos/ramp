@@ -5,12 +5,16 @@ import App from "./App";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
-let array = [1, 2, 3, 4, 5, 6, 7];
-let string = "Steven Nguyen";
+let array = [5, 4, 3, 2, 1];
+let string = "Hello Ramp, I'm Steven Nguyen";
 let boolean = false;
 
 root.render(
   <StrictMode>
-    <App />
+    <App input={array} />
+    <hr />
+    <App input={string} />
+    <hr />
+    <App input={boolean} />
   </StrictMode>
 );

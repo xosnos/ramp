@@ -9,7 +9,9 @@ export default function App({ input }) {
       <ul>
         {input.map((element) => (
           <li>
-            <div>{element}</div>
+            <div>
+              <h1>{element}</h1>
+            </div>
           </li>
         ))}
       </ul>
@@ -17,7 +19,11 @@ export default function App({ input }) {
   } else if (input) {
     /* If the prop is anything else,
     return the value of the prop in a div */
-    return <div>{input}</div>;
+    return (
+      <div>
+        <h1>{input}</h1>
+      </div>
+    );
   } else {
     /* If the prop is a falsy value,
     return a live-updating date and time
