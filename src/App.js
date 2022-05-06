@@ -8,7 +8,7 @@ export default function App({ input }) {
     return (
       <ul>
         {input.map((element) => (
-          <li>
+          <li key={element}>
             <div>
               <h1>{element}</h1>
             </div>
